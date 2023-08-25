@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Local;SIT;UAT;Dev</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Text.Json" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CLSPhase2.Dal\CLSPhase2.Dal.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ApiModelUpdateLib">
+      <HintPath>..\RefDlls\ApiModelUpdateLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Moodys.CL.RestApi">
+      <HintPath>..\RefDlls\Moodys.CL.RestApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

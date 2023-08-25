@@ -1,0 +1,1 @@
+Scaffold-DbContext -Connection "Host=localhost;Database=clsapi;Username=$Username;Password=$password" Npgsql.EntityFrameworkCore.PostgreSQL -NoOnConfiguring -Project "CLSPhase2.Dal" -o Entities -force
